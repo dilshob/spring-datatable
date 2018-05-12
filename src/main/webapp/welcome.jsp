@@ -55,450 +55,244 @@
 <!--     End Of Story     -->
 
 </head>
-<body class=" ">
-	<!-- <div class="wrapper"> -->
-
-
-	<!-- TamilNadu police LoGo On the header Code Starts -->
-	<!-- <div id="header-logo"></div> -->
-	<!-- TamilNadu police LoGo On the header Code Ends -->
 
 
 
+<body class="">
+        <div class="wrapper">
+            <div class="sidebar" data-color="rose" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
+                <!--
+                    Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+                    Tip 2: you can also add an image using data-image tag
+                -->
 
-	<!-- SideBar menu Code Starts -->
-	<div class="sidebar" data-background-color="black">
-		<!--
-        Tip 1: You can change the color of the sideBar using: data-color="purple | azure | green | orange | danger"
-				<div class="sideBar" data-color="rose" data-background-color="black" data-image="../assets/img/sidebar-1.jpg"> 
-        Tip 2: you can also add an image using data-image tag
-    -->
+                <div class="logo">
+                    <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                        CT
+                    </a>
 
-		<!-- On the top of the left menu Bar Code Starts-->
-		<div class="logo">
-			<a href="http://www.tnpolice.gov.in/CCTNSNICSDC/Index?1"
-				class="simple-text logo-normal">TamilNadu State Police </a>
-		</div>
-		<!-- On the top of the left menu Bar Code Ends-->
+                    <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                        Creative Tim
+                    </a>
 
-		<div class="sidebar-wrapper">
-			<ul class="nav">
+                </div>
 
-				<!-- User Management Starts -->
-				<li class="nav-item "><a class="nav-link"
-					data-toggle="collapse" href="#userManagement"> <i
-						class="material-icons">apps</i>
-						<p>
-							User Management<b class="caret"></b>
-						</p>
-				</a>
+                <div class="sidebar-wrapper">
+                    <ul class="nav">
 
-					<div class="collapse" id="userManagement">
-						<ul class="nav">
-							<li class="nav-item "><a class="nav-link" href="vehiclemanagement/activeVehicles"> <span
-									class="sidebar-mini"> A </span> <span class="sidebar-normal">
-										Active User </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="loadBlockedUserDelegater();"> <span
-									class="sidebar-mini"> B </span> <span class="sidebar-normal">
-										Blocked Users </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="loadNetworkComponentsDelegater();"> <span
-									class="sidebar-mini"> W </span> <span class="sidebar-normal">
-										Workstation </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="loadRemoteUserDelegater();"> <span
-									class="sidebar-mini"> R </span> <span class="sidebar-normal">
-										Remote User </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="loadWorkstationVersionInfo();"> <span
-									class="sidebar-mini"> W </span> <span class="sidebar-normal">
-										Workstation Version</span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="loadVersionAvailabiltyInfo();"> <span
-									class="sidebar-mini"> V </span> <span class="sidebar-normal">Version
-										Availabililty</span>
-							</a></li>
-						</ul>
-					</div></li>
-				<!-- User Management Ends -->
+                        <li class="nav-item ">
+                            <a class="nav-link" data-toggle="collapse" href="#pagesExamples">
+                                <i class="material-icons">image</i>
+                                <p> Pages
+                                <b class="caret"></b>
+                                </p>
+                            </a>
 
-				<!-- Resource Configuration Starts -->
+                            <div class="collapse" id="pagesExamples">
+                                <ul class="nav">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="./pages/pricing.html">
+                                        <span class="sidebar-mini"> P </span>
+                                        <span class="sidebar-normal"> Pricing </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="./pages/rtl.html">
+                                        <span class="sidebar-mini"> RS </span>
+                                        <span class="sidebar-normal"> RTL Support </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="./pages/timeline.html">
+                                        <span class="sidebar-mini"> T </span>
+                                        <span class="sidebar-normal"> Timeline </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="./pages/login.html">
+                                        <span class="sidebar-mini"> LP </span>
+                                        <span class="sidebar-normal"> Login Page </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="./pages/register.html">
+                                        <span class="sidebar-mini"> RP </span>
+                                        <span class="sidebar-normal"> Register Page </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="./pages/lock.html">
+                                        <span class="sidebar-mini"> LSP </span>
+                                        <span class="sidebar-normal"> Lock Screen Page </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="./pages/user.html">
+                                        <span class="sidebar-mini"> UP </span>
+                                        <span class="sidebar-normal"> User Profile </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
-				<!-- <li class="nav-item "><a class="nav-link"
-					data-toggle="collapse" href="#resourceConfiguration"> <i
-						class="material-icons">apps</i>
-						<p>
-							Resource Configuration <b class="caret"></b>
-						</p>
-				</a>
 
-					<div class="collapse" id="resourceConfiguration">
-						<ul class="nav">
-
-							<li class="nav-item "><a class="nav-link"
-								onclick="loadBaseStationListDelegater();"> <span
-									class="sidebar-mini"> S </span> <span class="sidebar-normal">
-										SMS Station Configuration </span>
-							</a></li>
-
-							<li class="nav-item "><a class="nav-link"
-								onclick="load_GPS_ServerConfiguration();"> <span
-									class="sidebar-mini"> G </span> <span class="sidebar-normal">
-										GPS Server Configuration </span>
-							</a></li>
-
-							<li class="nav-item "><a class="nav-link"
-								onclick="load_MSG_ServerConfiguration();"> <span
-									class="sidebar-mini"> M </span> <span class="sidebar-normal">
-										MSG Server Configuration </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="loadUserBusyTime();"> <span class="sidebar-mini">
-										U </span> <span class="sidebar-normal"> User Busy Time </span>
-							</a></li>
-						</ul>
-					</div></li> -->
-
-				<!-- Resource Configuration Ends -->
-
-				<!-- Remodeling Starts -->
-				
-				<!-- <li class="nav-item "><a class="nav-link"
-					data-toggle="collapse" href="#remodeling"> <i
-						class="material-icons">apps</i>
-						<p>
-							Remodeling <b class="caret"></b>
-						</p>
-				</a>
-
-					<div class="collapse" id="remodeling">
-						<ul class="nav">
-							<li class="nav-item "><a class="nav-link"
-								onclick="mainEventListDelegater();"> <span
-									class="sidebar-mini"> M </span> <span class="sidebar-normal">
-										Main Event Management </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="subEventListDelegater();"> <span
-									class="sidebar-mini"> S </span> <span class="sidebar-normal">Sub
-										Event Management</span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="questionaireDelegater();"> <span
-									class="sidebar-mini"> M </span> <span class="sidebar-normal">Manage
-										Questionaire</span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="serviceDelegater();"> <span class="sidebar-mini">
-										S </span> <span class="sidebar-normal"> Service ManageMent </span>
-							</a></li>
-						</ul>
-					</div></li> -->
-				<!-- Remodeling Ends -->
-
-				<!-- Management Starts -->
-				<!-- <li class="nav-item "><a class="nav-link"
-					data-toggle="collapse" href="#management"> <i
-						class="material-icons">apps</i>
-						<p>
-							Management <b class="caret"></b>
-						</p>
-				</a>
-
-					<div class="collapse" id="management">
-						<ul class="nav">
-							<li class="nav-item "><a class="nav-link"
-								onclick="priorityDelegater();"> <span class="sidebar-mini">
-										P </span> <span class="sidebar-normal">Priority Management </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="dispatcherZoneDelegater();"> <span
-									class="sidebar-mini"> D </span> <span class="sidebar-normal">
-										Dispatcher Zone Management </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="contactsDelegater();"> <span class="sidebar-mini">
-										C </span> <span class="sidebar-normal"> Contacts </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="stateZoneDelegater();"> <span class="sidebar-mini">
-										S </span> <span class="sidebar-normal"> State Zone </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="stateRangeDelegater();"> <span class="sidebar-mini">
-										S </span> <span class="sidebar-normal"> State Range </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="cityListDelegator();"> <span class="sidebar-mini">
-										S </span> <span class="sidebar-normal"> City List </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="townListDelegator();"> <span class="sidebar-mini">
-										T/V </span> <span class="sidebar-normal"> Town/Village </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="areaLocationDelegator();"> <span
-									class="sidebar-mini"> A/L </span> <span class="sidebar-normal">
-										Area/Location </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="sdoAcListDelegator();"> <span class="sidebar-mini">
-										S </span> <span class="sidebar-normal"> SDO List </span>
-							</a></li>
-							<li class="nav-item "><a class="nav-link"
-								onclick="loadPoliceStationListDelegator();"> <span
-									class="sidebar-mini"> P </span> <span class="sidebar-normal">
-										Police Station List </span>
-							</a></li>
-						</ul> -->
-						<!-- Management Ends -->
-
-						<<!-- li class="nav-item "><a class="nav-link"
-							data-toggle="collapse" href="#enquery"> <i
-								class="material-icons">apps</i>
-								<p>
-									Enquiry <b class="caret"></b>
-								</p>
-						</a>
-
-							<div class="collapse" id="enquery">
-								<ul class="nav">
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/regular.html"> <span class="sidebar-mini">
-												V </span> <span class="sidebar-normal"> Vehicle Lost And
-												Found </span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/extended.html"> <span class="sidebar-mini">
-												M </span> <span class="sidebar-normal">Missing Persons</span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/validation.html"> <span class="sidebar-mini">
-												U </span> <span class="sidebar-normal">UnIdentified Dead
-												Bodies</span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/wizard.html"> <span class="sidebar-mini">
-												D </span> <span class="sidebar-normal"> Departmental Posting
-										</span>
-									</a></li>
-								</ul>
-							</div></li>
-						<li class="nav-item "><a class="nav-link"
-							data-toggle="collapse" href="#VIPManagement"> <i
-								class="material-icons">apps</i>
-								<p>
-									VIP Management <b class="caret"></b>
-								</p>
-						</a>
-
-							<div class="collapse" id="VIPManagement">
-								<ul class="nav">
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/regular.html"> <span class="sidebar-mini">
-												V </span> <span class="sidebar-normal"> VIPs </span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/extended.html"> <span class="sidebar-mini">
-												B </span> <span class="sidebar-normal">Black List</span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/validation.html"> <span class="sidebar-mini">
-												N </span> <span class="sidebar-normal">Normal List</span>
-									</a></li>
-								</ul>
-							</div></li>
-						<li class="nav-item "><a class="nav-link"
-							data-toggle="collapse" href="#Approvals"> <i
-								class="material-icons">apps</i>
-								<p>
-									Approvals <b class="caret"></b>
-								</p>
-						</a>
-
-							<div class="collapse" id="Approvals">
-								<ul class="nav">
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/regular.html"> <span class="sidebar-mini">
-												P</span> <span class="sidebar-normal"> POI Approval </span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/extended.html"> <span class="sidebar-mini">
-												A </span> <span class="sidebar-normal">Approved Client POIs</span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/validation.html"> <span class="sidebar-mini">
-												R </span> <span class="sidebar-normal">Rejected Client POIs</span>
-									</a></li>
-								</ul>
-							</div></li>
-						<li class="nav-item "><a class="nav-link"
-							data-toggle="collapse" href="#cameras"> <i
-								class="material-icons">apps</i>
-								<p>
-									Cameras and Sensors <b class="caret"></b>
-								</p>
-						</a>
-
-							<div class="collapse" id="cameras">
-								<ul class="nav">
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/regular.html"> <span class="sidebar-mini">
-												C</span> <span class="sidebar-normal"> Cameras </span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/extended.html"> <span class="sidebar-mini">
-												S </span> <span class="sidebar-normal">Sensors</span>
-									</a></li>
-								</ul>
-							</div></li>
-						<li class="nav-item "><a class="nav-link"
-							data-toggle="collapse" href="#mdts"> <i
-								class="material-icons">apps</i>
-								<p>
-									MDT User Management <b class="caret"></b>
-								</p>
-						</a>
-
-							<div class="collapse" id="mdts">
-								<ul class="nav">
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/regular.html"> <span class="sidebar-mini">
-												C</span> <span class="sidebar-normal"> MDT Users </span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/extended.html"> <span class="sidebar-mini">
-												S </span> <span class="sidebar-normal">Network Status</span>
-									</a></li>
-								</ul>
-							</div></li>
-						<li class="nav-item "><a class="nav-link"
-							data-toggle="collapse" href="#pdm"> <i class="material-icons">apps</i>
-								<p>
-									Phone Directory Management <b class="caret"></b>
-								</p>
-						</a>
-
-							<div class="collapse" id="pdm">
-								<ul class="nav">
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/regular.html"> <span class="sidebar-mini">
-												C</span> <span class="sidebar-normal"> Phone Book Contacts </span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/extended.html"> <span class="sidebar-mini">
-												S </span> <span class="sidebar-normal">Phone Book Edit</span>
-									</a></li>
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/extended.html"> <span class="sidebar-mini">
-												S </span> <span class="sidebar-normal">Phonebook Preview</span>
-									</a></li>
-								</ul>
-							</div></li>
-						<li class="nav-item "><a class="nav-link"
-							data-toggle="collapse" href="#telephoneData"> <i
-								class="material-icons">apps</i>
-								<p>
-									Telephone Data <b class="caret"></b>
-								</p>
-						</a>
-
-							<div class="collapse" id="telephoneData">
-								<ul class="nav">
-									<li class="nav-item "><a class="nav-link"
-										href="./forms/regular.html"> <span class="sidebar-mini">
-												C</span> <span class="sidebar-normal"> Telephone Data Search
-										</span>
-									</a></li>
-								</ul>
-							</div></li>
-					</div></li>
-			</ul> -->
-		</div>
-	</div>
-	<!-- SideBar menu Code Ends -->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="content">
-                      <div class="container-fluid">
-                            <div class="row">
-      <div class="col-md-12">
-          <div class="card">
-            <div class="card-header card-header-primary card-header-icon">
-              <h4 class="card-title">DataTables.net</h4>
+                    </ul>
+                </div>
             </div>
-              <div class="card-body">
-                  <div class="toolbar">
-                      <!--        Here you can write extra buttons/actions for the toolbar              -->
-                  </div>
-                  <div class="material-datatables">
-                  	<table id="example" class="display" style="width:100%">
-        <thead>
-            <tr>
-                
-            </tr>
-        </thead>
-      </table>
-                  
-                  
-                  
-                  </div><!-- material-datables -->
-                  </div><!--card-body  -->
-                  </div><!-- card -->
-                  </div>
-                  </div><!-- row -->
-                  </div><!--container fluid  -->
-                  </div><!-- content -->
-                  
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
-</body>
 
-<!--   Core JS Files   -->
+            <div class="main-panel">
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
+                    <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                    <div class="navbar-minimize">
+                        <button id="minimizeSidebar" class="btn btn-just-icon btn-white btn-fab btn-round">
+                            <i class="material-icons text_align-center visible-on-sidebar-regular">more_vert</i>
+                            <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
+                        </button>
+                    </div>
+                            <a class="navbar-brand" href="#pablo">Dashboard</a>
+                        </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<!-- <script src="js/core/jquery.min.js"></script>
- -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end">
+                    <form class="navbar-form">
+                        <div class="input-group no-border">
+                            <input type="text" value="" class="form-control" placeholder="Search...">
+                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                <i class="material-icons">search</i>
+                                <div class="ripple-container"></div>
+                            </button>
+                        </div>
+                    </form>
+
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pablo">
+                            <i class="material-icons">dashboard</i>
+                                        <p>
+                            <span class="d-lg-none d-md-block">Stats</span>
+                            </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="https://creative-tim.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">notifications</i>
+                            <span class="notification">5</span>
+                                        <p>
+                                            <span class="d-lg-none d-md-block">Some Actions<b class="caret"></b></span>
+                                        </p>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Mike John responded to your email</a>
+                                        <a class="dropdown-item" href="#">You have 5 new tasks</a>
+                                        <a class="dropdown-item" href="#">You're now friend with Andrew</a>
+                                        <a class="dropdown-item" href="#">Another Notification</a>
+                                        <a class="dropdown-item" href="#">Another One</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pablo">
+                            <i class="material-icons">person</i>
+                                    <p>
+                            <span class="d-lg-none d-md-block">Account</span>
+                            </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End Navbar -->
+
+
+
+                 <!-- Content Goes Here -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card ">
+                                    
+                                    <div class="card-header card-header-success card-header-icon">
+                                        <div class="card-icon">
+                                            <i class="material-icons"></i>
+                                        </div>
+                                        <h4 class="card-title">Global Sales by Top Locations</h4>
+                                    </div>
+
+                                    <div class="card-body ">
+                                          <div class="material-datatables">
+											<div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+												<div class="row">
+													<div class="col-sm-12">
+														<table id="datatables"
+															class="table table-striped table-no-bordered table-hover dataTable dtr-inline"
+															cellspacing="0" width="100%" style="width: 100%;" role="grid"
+															aria-describedby="datatables_info">
+															<thead></thead><tbody></tbody>
+														</table>
+													</div>
+									            </div>
+									        </div>
+									    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Goes Here -->
+                <footer class="footer ">
+                    <div class="container">
+                        <nav class="pull-left">
+                            <ul>
+                                <li>
+                                    <a href="https://www.creative-tim.com"> Creative Tim </a>
+                                </li>
+                                <li>
+                                    <a href="http://presentation.creative-tim.com">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="http://blog.creative-tim.com">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.creative-tim.com/license">Licenses </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="copyright pull-right">
+                            &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+                        </div>
+                    </div>
+                </footer>
+
+
+            </div>
+        </div>
+
+    </body>
+
+
+<!--   Java Script Files Included Here  -->
+<script src="js/core/jquery.min.js"></script>
+<script src="js/pligin/jquery.dataTables.js"></script>
  <script src="js/core/popper.min.js"></script>
 <script src="js/bootstrap-material-design.min.js"></script>
 <script src="js/material-dashboard.js"></script>
-
 <!-- Material Kit Core initialisation of plugIns and Bootstrap Material Design Library -->
 <script src="js\material-dashboard.js"></script>
-
 <!-- Include a polyFill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
 <script src="js/core.js"></script>
 <script src="js/activeusers.js"></script>
