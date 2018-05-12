@@ -33,7 +33,7 @@ $(document).ready(function() {
 	*/
 	
 	
-    $('#example').DataTable( {
+    $('#datatables').DataTable( {
     	"ajax":'/getAllActiveUsers.action',
         "columns": [
                     { "title":"Name",				"data":"umIdPk"},
