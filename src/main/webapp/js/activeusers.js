@@ -1,13 +1,20 @@
 $(document).ready(function() {
+/*	$.ajax( {
+        "url": '/getAllActiveUsers.action',
+        "success": function ( json ) {
+            $('#example').dataTable( json );
+        },
+        "dataType": "json"
+    } );*/
     $('#example').DataTable( {
-        "ajax": 'js/arrays.txt',
+    	"ajax":'/getAllActiveUsers.action',
         "columns": [
-                    { "title":"Name",},
-                    { "title":"Position","name": "Position" },
-                    { "title":"Office","name": "Office" },
-                    { "title":"Extn","name": "Extn" },
-                    { "title":"Start date","name": "Start date" },
-                    { "title":"Salary","name": "Salary" }
+                    { "title":"Name","data":"umIdPk"},
+                    { "title":"Position","data": "umName" },
+                    { "title":"Office","data": "umEmailid" },
+                    { "title":"Extn","data": "umUserStatus" },
+                    { "title":"Start date","data": "umUserType" },
+                    { "title":"Salary","data": "Salary" }
                   ]
 
     } );

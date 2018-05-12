@@ -423,15 +423,67 @@
 		</div>
 	</div>
 	<!-- SideBar menu Code Ends -->
-	<div id="tableplace">
-	<table id="example" class="display" style="width:100%">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="content">
+                      <div class="container-fluid">
+                            <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-primary card-header-icon">
+              <h4 class="card-title">DataTables.net</h4>
+            </div>
+              <div class="card-body">
+                  <div class="toolbar">
+                      <!--        Here you can write extra buttons/actions for the toolbar              -->
+                  </div>
+                  <div class="material-datatables">
+                  	<table id="example" class="display" style="width:100%">
         <thead>
             <tr>
                 
             </tr>
         </thead>
       </table>
-	</div>
+                  
+                  
+                  
+                  </div><!-- material-datables -->
+                  </div><!--card-body  -->
+                  </div><!-- card -->
+                  </div>
+                  </div><!-- row -->
+                  </div><!--container fluid  -->
+                  </div><!-- content -->
+                  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 </body>
 
 <!--   Core JS Files   -->

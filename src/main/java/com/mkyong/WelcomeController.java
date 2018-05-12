@@ -2,14 +2,16 @@ package com.mkyong;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Value;
+import com.mkyong.VUserMaster;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.user.controller.ResponseBody;
-import org.user.controller.VUserMaster;
-
-import antlr.collections.List;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class WelcomeController {
@@ -29,12 +31,14 @@ public class WelcomeController {
 	public @ResponseBody Map<String, ? extends Object> getAllActiveUsers() throws Exception {
 		try {
 			List<VUserMaster> users = new ArrayList<>();
+			VUserMaster user=new VUserMaster();
 			user.setUmIdPk(101);
 			user.setUmName("snddjs");
 			user.setUmEmailid("sjhdjshdj");
+			users.add(user);
 			return getMapForView(users);
 		} catch (Exception e) {
-			logger.error("all active users list ", e);
+			System.out.println("Error when retriving data");
 			return getModelMapError("Error retrieving All Active Users from database.");
 		}
 	}
