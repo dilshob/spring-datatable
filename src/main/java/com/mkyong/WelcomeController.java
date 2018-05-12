@@ -1,5 +1,6 @@
 package com.mkyong;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -27,12 +28,28 @@ public class WelcomeController {
 	@RequestMapping(value = "/getAllActiveUsers.action")
 	public @ResponseBody Map<String, ? extends Object> getAllActiveUsers() throws Exception {
 		try {
-			List<VUserMaster> users = userService.getAllActiveUsers();
+			List<VUserMaster> users = new ArrayList<>();
+			user.setUmIdPk(101);
+			user.setUmName("snddjs");
+			user.setUmEmailid("sjhdjshdj");
 			return getMapForView(users);
 		} catch (Exception e) {
 			logger.error("all active users list ", e);
 			return getModelMapError("Error retrieving All Active Users from database.");
 		}
+	}
+	private Map<String, Object> getMapForView(List<VUserMaster> vusers) {
+		Map<String, Object> modelMap = new HashMap<String, Object>(3);
+		modelMap.put("total", vusers.size());
+		modelMap.put("data", vusers);
+		modelMap.put("success", true);
+		return modelMap;
+	}
+	private Map<String, Object> getModelMapError(String msg) {
+		Map<String, Object> modelMap = new HashMap<String, Object>(2);
+		modelMap.put("message", msg);
+		modelMap.put("success", false);
+		return modelMap;
 	}
 
 }
