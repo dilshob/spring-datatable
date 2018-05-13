@@ -90,7 +90,7 @@
                             <div class="collapse" id="pagesExamples">
                                 <ul class="nav">
                                     <li class="nav-item ">
-                                        <a class="nav-link" href="./pages/pricing.html">
+                                        <a class="nav-link" href="getAllActiveUsers()">
                                         <span class="sidebar-mini"> AU </span>
                                         <span class="sidebar-normal"> Active User </span>
                                         </a>
@@ -171,7 +171,7 @@
                                     <div class="card-body ">
                                     
 									<div class="toolbar">
-										<button type="reset" class="btn btn-fill btn-rose">Refresh<div class="ripple-container"></div></button>
+										<button type="reset" onClick="refreshTableData()" class="btn btn-fill btn-rose">Refresh<div class="ripple-container"></div></button>
 										<button type="submit" class="btn btn-fill btn-rose">Add User<div class="ripple-container"></div></button>
 										<button type="submit" class="btn btn-fill btn-rose">Edit User<div class="ripple-container"></div></button>
 										<button type="submit" class="btn btn-fill btn-rose">Block User<div class="ripple-container"></div></button>
