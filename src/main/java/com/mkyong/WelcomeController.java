@@ -31,11 +31,13 @@ public class WelcomeController {
 	public @ResponseBody Map<String, ? extends Object> getAllActiveUsers() throws Exception {
 		try {
 			List<VUserMaster> users = new ArrayList<>();
+			for(int i=0;i<20;i++) {
 			VUserMaster user=new VUserMaster();
-			user.setUmIdPk(101);
-			user.setUmName("snddjs");
-			user.setUmEmailid("sjhdjshdj");
+			user.setUmIdPk(1001+i);
+			user.setUmName("snddjs"+i);
+			user.setUmEmailid("sjhdjshdj"+i);
 			users.add(user);
+			}
 			return getMapForView(users);
 		} catch (Exception e) {
 			System.out.println("Error when retriving data");

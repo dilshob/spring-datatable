@@ -15,19 +15,18 @@
 	width: 310px !important;
 } */
 
-/* #header-logo {
-	background: url(images/dark.png) no-repeat scroll top
-		center transparent;
-	position: fixed;
+ #header-logo {
+	background: url(images/dark.png) no-repeat  scroll top	center transparent;
+	 position: absolute;
 	top: 10px;
-	left: 225px;
+	left: 100px;
 	display: inline-table;
 	height: 95px;
 	overflow: hidden;
 	size: 10px;
 	width: 85%;
 	z-index: 600;
-} */
+} 
 </style>
 
 <meta charset="utf-8">
@@ -82,8 +81,8 @@
 
                         <li class="nav-item ">
                             <a class="nav-link" data-toggle="collapse" href="#pagesExamples">
-                                <i class="material-icons">image</i>
-                                <p> Pages
+                                <i class="material-icons">apps</i>
+                                <p> User Management
                                 <b class="caret"></b>
                                 </p>
                             </a>
@@ -92,44 +91,39 @@
                                 <ul class="nav">
                                     <li class="nav-item ">
                                         <a class="nav-link" href="./pages/pricing.html">
-                                        <span class="sidebar-mini"> P </span>
-                                        <span class="sidebar-normal"> Pricing </span>
+                                        <span class="sidebar-mini"> AU </span>
+                                        <span class="sidebar-normal"> Active User </span>
                                         </a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link" href="./pages/rtl.html">
-                                        <span class="sidebar-mini"> RS </span>
-                                        <span class="sidebar-normal"> RTL Support </span>
+                                        <span class="sidebar-mini"> BU </span>
+                                        <span class="sidebar-normal"> Blocked Users </span>
                                         </a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link" href="./pages/timeline.html">
-                                        <span class="sidebar-mini"> T </span>
-                                        <span class="sidebar-normal"> Timeline </span>
+                                        <span class="sidebar-mini"> W </span>
+                                        <span class="sidebar-normal"> Workstation </span>
                                         </a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link" href="./pages/login.html">
-                                        <span class="sidebar-mini"> LP </span>
-                                        <span class="sidebar-normal"> Login Page </span>
+                                        <span class="sidebar-mini"> RU </span>
+                                        <span class="sidebar-normal"> Remote User </span>
                                         </a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link" href="./pages/register.html">
-                                        <span class="sidebar-mini"> RP </span>
-                                        <span class="sidebar-normal"> Register Page </span>
+                                        <span class="sidebar-mini"> WV </span>
+                                        <span class="sidebar-normal"> Workstation Version </span>
                                         </a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link" href="./pages/lock.html">
-                                        <span class="sidebar-mini"> LSP </span>
-                                        <span class="sidebar-normal"> Lock Screen Page </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link" href="./pages/user.html">
-                                        <span class="sidebar-mini"> UP </span>
-                                        <span class="sidebar-normal"> User Profile </span>
+                                        <span class="sidebar-mini"> VA </span>
+                                        <span class="sidebar-normal"> Version
+										Availability </span>
                                         </a>
                                     </li>
                                 </ul>
@@ -144,74 +138,21 @@
 
             <div class="main-panel">
                 <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
+				 <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
                     <div class="container-fluid">
                     <div class="navbar-wrapper">
+                   
                     <div class="navbar-minimize">
                         <button id="minimizeSidebar" class="btn btn-just-icon btn-white btn-fab btn-round">
                             <i class="material-icons text_align-center visible-on-sidebar-regular">more_vert</i>
                             <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
                         </button>
+                          <div id="header-logo"></div>
                     </div>
-                            <a class="navbar-brand" href="#pablo">Dashboard</a>
-                        </div>
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="sr-only">Toggle navigation</span>
-                            <span class="navbar-toggler-icon icon-bar"></span>
-                            <span class="navbar-toggler-icon icon-bar"></span>
-                            <span class="navbar-toggler-icon icon-bar"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse justify-content-end">
-                    <form class="navbar-form">
-                        <div class="input-group no-border">
-                            <input type="text" value="" class="form-control" placeholder="Search...">
-                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                                <i class="material-icons">search</i>
-                                <div class="ripple-container"></div>
-                            </button>
-                        </div>
-                    </form>
-
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#pablo">
-                            <i class="material-icons">dashboard</i>
-                                        <p>
-                            <span class="d-lg-none d-md-block">Stats</span>
-                            </p>
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="https://creative-tim.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">notifications</i>
-                            <span class="notification">5</span>
-                                        <p>
-                                            <span class="d-lg-none d-md-block">Some Actions<b class="caret"></b></span>
-                                        </p>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                                        <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                                        <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                                        <a class="dropdown-item" href="#">Another Notification</a>
-                                        <a class="dropdown-item" href="#">Another One</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#pablo">
-                            <i class="material-icons">person</i>
-                                    <p>
-                            <span class="d-lg-none d-md-block">Account</span>
-                            </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                </nav>
+                    </div>
+                    </nav>
+                    
                 <!-- End Navbar -->
 
 
@@ -224,18 +165,28 @@
                                 <div class="card ">
                                     
                                     <div class="card-header card-header-success card-header-icon">
-                                        <div class="card-icon">
-                                            <i class="material-icons"></i>
-                                        </div>
-                                        <h4 class="card-title">Global Sales by Top Locations</h4>
+                                        <h4 class="card-title">Active Users</h4>
                                     </div>
 
                                     <div class="card-body ">
-                                          <div class="material-datatables">
+                                    
+									<div class="toolbar">
+										<button type="reset" class="btn btn-fill btn-rose">Refresh<div class="ripple-container"></div></button>
+										<button type="submit" class="btn btn-fill btn-rose">Add User<div class="ripple-container"></div></button>
+										<button type="submit" class="btn btn-fill btn-rose">Edit User<div class="ripple-container"></div></button>
+										<button type="submit" class="btn btn-fill btn-rose">Block User<div class="ripple-container"></div></button>
+										<button type="submit" class="btn btn-fill btn-rose">Delete User<div class="ripple-container"></div></button>
+										<button type="submit" class="btn btn-fill btn-rose">Delete User<div class="ripple-container"></div></button>
+										
+										
+									</div>
+									
+									<div class="material-datatables">
 											<div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
 												<div class="row">
 													<div class="col-sm-12">
 														<table id="datatables"
+															class="table table-striped table-no-bordered table-hover dataTable dtr-inline"
 															cellspacing="0" width="100%" style="width: 100%;" role="grid"
 															aria-describedby="datatables_info">
 															<thead></thead><tbody></tbody>
