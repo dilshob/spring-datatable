@@ -5,7 +5,8 @@
 	class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths perfect-scrollbar-on">
 
 <head>
-
+<script src="js/core/jquery.min.js"></script>
+<script src="js/activeusers.js"></script>
 <style type="text/css">
 /* .sidebar {
 	width: 310px !important;
@@ -15,18 +16,7 @@
 	width: 310px !important;
 } */
 
- #header-logo {
-	background: url(images/dark.png) no-repeat  scroll top	center transparent;
-	 position: absolute;
-	top: 10px;
-	left: 100px;
-	display: inline-table;
-	height: 95px;
-	overflow: hidden;
-	size: 10px;
-	width: 85%;
-	z-index: 600;
-} 
+
 </style>
 
 <meta charset="utf-8">
@@ -51,6 +41,7 @@
 <!--     material-dashboard.min.css     -->
 <link rel="stylesheet" href="css/material-dashboard.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="css/desgin.css">
 <!--     End Of Story     -->
 
 </head>
@@ -161,46 +152,173 @@
                 <div class="content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="card ">
-                                    
-                                    <div class="card-header card-header-success card-header-icon">
-                                        <h4 class="card-title">Active Users</h4>
-                                    </div>
-
-                                    <div class="card-body ">
-                                    
-									<div class="toolbar">
-										<button type="reset" onClick="refreshTableData()" class="btn btn-fill btn-rose">Refresh<div class="ripple-container"></div></button>
-										<button type="submit" class="btn btn-fill btn-rose">Add User<div class="ripple-container"></div></button>
-										<button type="submit" class="btn btn-fill btn-rose">Edit User<div class="ripple-container"></div></button>
-										<button type="submit" class="btn btn-fill btn-rose">Block User<div class="ripple-container"></div></button>
-										<button type="submit" class="btn btn-fill btn-rose">Delete User<div class="ripple-container"></div></button>
-										<button type="submit" class="btn btn-fill btn-rose">Delete User<div class="ripple-container"></div></button>
-										
-										
+                        
+						<div id="addUserForm" class="col-md-12 hide">
+							<div class="card ">
+								<div class="card-header card-header-rose card-header-text">
+									<div class="card-text">
+										<h4 class="card-title">Add User</h4>
 									</div>
-									
-									<div class="material-datatables">
-											<div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+								</div>
+								<div class="card-body ">
+									<form method="get" action="/" class="form-horizontal">
+										<div class="row">
+											<label class="col-sm-3 col-form-label">Name</label>
+
+											<div class="col-sm-9">
+												<div class="form-group bmd-form-group">
+													<input type="text" class="form-control"> <span
+														class="bmd-help">Enter User Name</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<label class="col-sm-3 col-form-label">User ID</label>
+
+											<div class="col-sm-9">
+												<div class="form-group bmd-form-group">
+													<input type="text" class="form-control"> <span
+														class="bmd-help">Enter User preferred user id.</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<label class="col-sm-3 col-form-label">Contact No</label>
+
+											<div class="col-sm-9">
+												<div class="form-group bmd-form-group">
+													<input type="number" class="form-control"> <span
+														class="bmd-help">Enter User contact number.</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<label class="col-sm-3 col-form-label">Email Id</label>
+
+											<div class="col-sm-9">
+												<div class="form-group bmd-form-group">
+													<input type="email" class="form-control"> <span
+														class="bmd-help">Enter User preferred email id.</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<label class="col-sm-3 col-form-label">User Type</label>
+											<div class="col-lg-5 col-md-6 col-sm-3">
+												<div class="btn-group bootstrap-select show-tick">
+													<select class="selectpicker"
+														data-style="btn select-with-transition" multiple=""
+														title="Choose City" data-size="7" tabindex="-98">
+														<option disabled="">Choose User Type</option>
+														<option value="2">Paris</option>
+														<option value="3">Bucharest</option>
+														<option value="4">Rome</option>
+														<option value="5">New York</option>
+														<option value="6">Miami</option>
+														<option value="7">Piatra Neamt</option>
+														<option value="8">Paris</option>
+														<option value="9">Bucharest</option>
+														<option value="10">Rome</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<label class="col-sm-3 col-form-label">Agent Id</label>
+
+											<div class="col-sm-9">
+												<div class="form-group bmd-form-group">
+													<input type="text" class="form-control"> <span
+														class="bmd-help">Enter User preferred agent Id</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<label class="col-sm-3 col-form-label">User Type</label>
+											<div class="col-lg-5 col-md-6 col-sm-3">
+												<div class="btn-group bootstrap-select show-tick">
+													<select class="selectpicker"
+														data-style="btn select-with-transition" multiple=""
+														title="choose department" data-size="7" tabindex="-98">
+														<option disabled="">Choose DepartMent</option>
+														<option value="2">Paris</option>
+														<option value="3">Bucharest</option>
+														<option value="4">Rome</option>
+														<option value="5">New York</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+									</form>
+								</div>
+							</div>
+							</div>
+
+
+							<div class="col-md-12">
+								<div class="card ">
+
+									<div class="card-header card-header-success card-header-icon">
+										<h4 class="card-title">Active Users</h4>
+									</div>
+
+									<div class="card-body ">
+
+										<div class="toolbar">
+											<button type="reset" onClick="refreshTableData()"
+												class="btn btn-fill btn-rose">
+												Refresh
+												<div class="ripple-container"></div>
+											</button>
+											<button type="submit" class="btn btn-fill btn-rose"
+												onclick="addUsers(this)">
+												Add User
+												<div class="ripple-container"></div>
+											</button>
+											<button type="submit" class="btn btn-fill btn-rose">
+												Edit User
+												<div class="ripple-container"></div>
+											</button>
+											<button type="submit" class="btn btn-fill btn-rose">
+												Block User
+												<div class="ripple-container"></div>
+											</button>
+											<button type="submit" class="btn btn-fill btn-rose"
+												onclick="removeUser()">
+												Delete User
+												<div class="ripple-container"></div>
+											</button>
+											<button type="submit" class="btn btn-fill btn-rose">
+												Delete User
+												<div class="ripple-container"></div>
+											</button>
+
+
+										</div>
+
+										<div class="material-datatables">
+											<div id="datatables_wrapper"
+												class="dataTables_wrapper container-fluid dt-bootstrap4">
 												<div class="row">
 													<div class="col-sm-12">
 														<table id="datatables"
 															class="table table-striped table-no-bordered table-hover dataTable dtr-inline"
-															cellspacing="0" width="100%" style="width: 100%;" role="grid"
-															aria-describedby="datatables_info">
-															<thead></thead><tbody></tbody>
+															cellspacing="0" width="100%" style="width: 100%;"
+															role="grid" aria-describedby="datatables_info">
+															<thead></thead>
+															<tbody></tbody>
 														</table>
 													</div>
-									            </div>
-									        </div>
-									    </div>
-                                    </div>
+												</div>
+											</div>
+										</div>
+									</div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
 
                 <!-- Footer Goes Here -->
@@ -223,7 +341,11 @@
                             </ul>
                         </nav>
                         <div class="copyright pull-right">
-                            &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+                            &copy; <script>
+																													document
+																															.write(new Date()
+																																	.getFullYear())
+																												</script>, made with <i class="material-icons">favorite</i> by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
                         </div>
                     </div>
                 </footer>
@@ -239,7 +361,7 @@
 
 
     <!--   Core JS Files   -->
-<script src="js/core/jquery.min.js"></script>
+
 <script src="js/core/popper.min.js"></script>
 
 <script src="js/bootstrap-material-design.min.js"></script>
@@ -315,6 +437,5 @@
 <!-- demo init -->
 <script src="js/plugins/demo.js"></script>
 
-<script src="js/activeusers.js"></script>
 
 </html>

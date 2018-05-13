@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+ #header-logo {
+	background: url(../images/dark.png) no-repeat  scroll top	center transparent;
+	 position: absolute;
+	top: 10px;
+	left: 100px;
+	display: inline-table;
+	height: 95px;
+	overflow: hidden;
+	size: 10px;
+	width: 85%;
+	z-index: 600;
+} 
+.hide{
+	display:none!important;
+}
